@@ -1,6 +1,6 @@
-import buildUrl from '../src/build-url.js';
+import { buildUrl } from '../src/build-url.js';
 
-describe('Tests fixUrl helper', () => {
+describe('Tests buildUrl helper', () => {
   test.each([
     {
       args: ['https://infotorg.no/', '/aktuelt/nyheter', '/blah/'],

@@ -1,6 +1,6 @@
 {
   "name": "@infotorg/build-url",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Can build new urls from parameters or fix them.",
   "type": "module",
   "main": "dist/build-url.cjs.js",

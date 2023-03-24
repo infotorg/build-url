@@ -1,1 +1,1 @@
-{"list":[{"title":"module.exports","link":"<a href=\"module.html#.exports\">exports</a>","description":"<p>Fixed url by removing slashes</p>"}]}
+{"list":[{"title":"buildUrl","link":"<a href=\"global.html#buildUrl\">buildUrl</a>","description":"<p>Build an URL by joining provided parts and removing trailing slash</p>"}]}
