@@ -7,25 +7,25 @@
  * @example
  * import buildUrl from '@infotorg/build-url';
  * 
- * How url is fixed
+ * // How url is fixed
  * 
  * const normalizedUrl = buildUrl('https://example.com/');
  * console.log(normalizedUrl);
- * https://example.com
+ * // https://example.com
  * 
  * 
- * How url is built from two strings
+ * // How url is built from two parts
  * 
- * const normalizedUrl = buildUrl('https://example', 'chunk');
+ * const normalizedUrl = buildUrl('https://example.com', 'chunk');
  * console.log(normalizedUrl);
- * https://example/chunk
+ * // https://example.com/chunk
  * 
  * 
- * How url is built by joining an array's indexes
+ * // How url is built by joining an array of parts
  * 
  * const normalizedUrl = buildUrl(['https://example', 'chunk']);
  * console.log(normalizedUrl);
- * https://example/chunk
+ * // https://example/chunk
  * 
  */
 
