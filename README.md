@@ -41,7 +41,7 @@ console.log(normalizedUrl);
 
 Tests are written with `jest`. They can be run with `npm`:
 
-```
+```shell
 npm run test
 ```
 
