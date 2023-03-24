@@ -7,7 +7,7 @@ Build an URL by joining provided parts and removing trailing slash
 ## Installation
 
 ```bash
-$ npm install @infotorg/build-url
+npm install @infotorg/build-url
 ```
 
 ## Usage
