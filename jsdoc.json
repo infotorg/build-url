@@ -22,15 +22,15 @@
     "recurse": true,
     "theme_opts": {
       "default_theme": "light",
-      "homepageTitle": "API Documentation – @infotorg/ApiClient",
+      "homepageTitle": "API Documentation – @infotorg/build-url",
       "meta": [
         {
           "name": "author",
-          "content": "Volodymyr Chumak"
+          "content": "Lukasz Sitnik"
         },
         {
           "name": "description",
-          "content": "Promised-based Api Client for node.js and the browser."
+          "content": "Build an URL by joining provided parts and removing trailing slash"
         }
       ]
     }

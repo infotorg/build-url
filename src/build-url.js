@@ -1,34 +1,30 @@
 /**
  * Build an URL by joining provided parts and removing trailing slash
  *
- * @param {[String]|String}
- * @returns {string}
  * @example
- * import buildUrl from '@infotorg/build-url';
- * 
+ * import { buildUrl } from '@infotorg/build-url';
+ *
  * // How url is fixed
- * 
  * const normalizedUrl = buildUrl('https://example.com/');
  * console.log(normalizedUrl);
  * // https://example.com
- * 
- * 
+ *
+ *
  * // How url is built from two parts
- * 
  * const normalizedUrl = buildUrl('https://example.com', 'chunk');
  * console.log(normalizedUrl);
  * // https://example.com/chunk
- * 
- * 
+ *
+ *
  * // How url is built by joining an array of parts
- * 
  * const normalizedUrl = buildUrl(['https://example', 'chunk']);
  * console.log(normalizedUrl);
  * // https://example/chunk
- * 
+ *
+ * @param {string[]|string} args Url parts
+ * @returns {string}
  */
-
-export default function fixUrl(...args) {
+function buildUrl(...args) {
   if (!args.length) {
     return '';
   }
@@ -53,3 +49,5 @@ export default function fixUrl(...args) {
     })
     .join('');
 }
+
+export { buildUrl };
