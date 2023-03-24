@@ -15,31 +15,26 @@ $ npm install @infotorg/build-url
 As a parameter(s) an array with url parts or just strings can be provided.
 
 ```javascript
-  import buildUrl from '@infotorg/build-url';
-  
+import buildUrl from '@infotorg/build-url';
 
-  /**
-   * How url is fixed
-   */
-  const = normalizedUrl = buildUrl('https://example.com/');
-  console.log(normalizedUrl);
-  // https://example.com
+// How url is fixed
+const normalizedUrl = buildUrl('https://example.com/');
+
+console.log(normalizedUrl);
+// https://example.com
 
 
-    /**
-   * How url is built from two strings
-   */
-  const = normalizedUrl = buildUrl('https://example', 'chunk');
-  console.log(normalizedUrl);
-  // https://example/chunk
+// How url is built from two strings
+const normalizedUrl = buildUrl('https://example.com', 'chunk');
 
-  
-    /**
-   * How url is built by joining an array's indexes
-   */
-  const = normalizedUrl = buildUrl(['https://example', 'chunk']);
-  console.log(normalizedUrl);
- // https://example/chunk
+console.log(normalizedUrl);
+// https://example.com/chunk
+
+// How url is built by joining an array's indexes
+const normalizedUrl = buildUrl(['https://example.com', 'chunk']);
+
+console.log(normalizedUrl);
+// https://example.com/chunk
 ```
 
 ## Tests
