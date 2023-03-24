@@ -1,6 +1,5 @@
 /**
- * Removes spare slash from the end of url
- * Joins url with provided parts
+ * Build an URL by joining provided parts and removing trailing slash
  *
  * @param {[String]|String}
  * @returns {string}
