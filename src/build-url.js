@@ -1,7 +1,34 @@
 /**
- * Fixed url by removing slashes
+ * Removes spare slash from the end of url
+ * Joins url with provided parts
  *
+ * @param {[String]|String}
+ * @returns {string}
+ * @example
+ * import buildUrl from '@infotorg/build-url';
+ * 
+ * How url is fixed
+ * 
+ * const normalizedUrl = buildUrl('https://example.com/');
+ * console.log(normalizedUrl);
+ * https://example.com
+ * 
+ * 
+ * How url is built from two strings
+ * 
+ * const normalizedUrl = buildUrl('https://example', 'chunk');
+ * console.log(normalizedUrl);
+ * https://example/chunk
+ * 
+ * 
+ * How url is built by joining an array's indexes
+ * 
+ * const normalizedUrl = buildUrl(['https://example', 'chunk']);
+ * console.log(normalizedUrl);
+ * https://example/chunk
+ * 
  */
+
 export default function fixUrl(...args) {
   if (!args.length) {
     return '';
@@ -20,7 +47,7 @@ export default function fixUrl(...args) {
       }
 
       if (chunk.endsWith('/')) {
-        chunk = chunk.substr(0, chunk.length - 1);
+        chunk = chunk.substring(0, chunk.length - 1);
       }
 
       return chunk;
