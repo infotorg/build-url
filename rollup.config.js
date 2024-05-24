@@ -18,7 +18,7 @@ export default {
     {
       file: 'dist/build-url.umd.js',
       format: 'umd',
-      name: 'ApiClient',
+      name: 'buildUrl',
       sourcemap: true,
     },
   ],
